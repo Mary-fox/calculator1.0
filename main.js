@@ -1,5 +1,13 @@
+"use strict";
 let = op;
 
+/**
+ *  Функция берет 2 числа ,и в зависимости от значения выбранного оператора вычисляет результат.
+ * @param  {number} number1 Первое заданное число
+ * @param  {number} number2 Второе заданное число
+ * @param  {string} operator варианты операторов,которые обрабатываются при выборе одного из них
+ * @returns {number} result выводит результат выбранного действия
+ */
 function func() {
     let result;
     let number1 = Number(document.getElementById("number1").value);
