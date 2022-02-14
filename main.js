@@ -5,10 +5,10 @@
  * @param  {string} operator варианты операторов,которые обрабатываются при выборе одного из них
  * @returns {number} result выводит результат выбранного действия
  */
-let operator;
+let operator; //переменная,которая передает выбранное действие "+,-,*,/"
 
 function func() {
-    let result;
+    let result; //переменная,которая передает результат
     let number1 = Number(document.getElementById("number1").value);
     let number2 = Number(document.getElementById("number2").value);
     switch (operator) {
@@ -25,5 +25,5 @@ function func() {
             result = number1 / number2;
             break;
     }
-    document.getElementById('result').innerHTML = result;
+    document.getElementById('result').innerHTML = result; //вывод результата на страницу
 }
