@@ -46,7 +46,7 @@ function calc() {
     } else if (operator == "/") {
         result = number1 / number2;
     } else {
-        result = "error";
+        result = "Ошибка ввода данных";
     }
     document.getElementById('result').innerHTML = result; //вывод результата на страницу
 }
