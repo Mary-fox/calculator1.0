@@ -32,7 +32,7 @@ function func() {
  */
 
 
-function calculator() {
+function calc() {
     let result;
     let number1 = Number(document.getElementById("number1").value);
     let number2 = Number(document.getElementById("number2").value);
