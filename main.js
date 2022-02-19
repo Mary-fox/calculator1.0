@@ -31,7 +31,6 @@ function func() {
 
  */
 
-
 function calc() {
     let result;
     let number1 = Number(document.getElementById("number1").value);
@@ -50,3 +49,11 @@ function calc() {
     }
     document.getElementById('result').innerHTML = result; //вывод результата на страницу
 }
+function control(input) { 
+    let value = input.value; 
+    let rep = /[\;":'а-яА-Я]/; 
+    if (rep.test(value)) { 
+        value = value.replace(rep, ''); 
+        input.value = value; 
+    } 
+} 
