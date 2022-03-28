@@ -49,12 +49,11 @@ function calc() {
     }
     document.getElementById('result').innerHTML = result; //вывод результата на страницу
 }
-
-function control(input) {
-    let value = input.value;
-    let rep = /[\;":'а-яА-Я]/;
-    if (rep.test(value)) {
-        value = value.replace(rep, '');
-        input.value = value;
-    }
-}
+function control(input) { 
+    let value = input.value; 
+    let rep = /[\;":'а-яА-Я]/; 
+    if (rep.test(value)) { 
+        value = value.replace(rep, ''); 
+        input.value = value; 
+    } 
+} 
